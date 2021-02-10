@@ -12,7 +12,7 @@ def getListFiles(path):
 
 	else:
 		print "\nThe specified path does not exist."
-		exit()
+		return None
 
 def convert_Webp_To_Gif_Jpeg(files, output_path):
 	for file in files:
@@ -56,7 +56,6 @@ if __name__ == "__main__":
 
 	if not files:
 		print "\nNo files found"
-		exit()
 
 	else:
 		print "\nGet %s files with webp extension\n" % len(files)
